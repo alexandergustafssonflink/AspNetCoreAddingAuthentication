@@ -39,7 +39,6 @@ namespace WishList.Controllers
         {
             if(ModelState.IsValid)
             {
-                _userManager.CreateAsync()
                 return RedirectToAction("Index");
             } else
             {
