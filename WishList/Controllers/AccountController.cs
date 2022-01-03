@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace WishList.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
-        [Authorize]
         public IActionResult Index()
         {
             return View();
