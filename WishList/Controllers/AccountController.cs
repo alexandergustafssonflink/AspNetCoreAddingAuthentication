@@ -16,10 +16,8 @@ namespace WishList.Controllers
         private UserManager<ApplicationUser> _userManager;
         private SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager, SignInManager)
+        public AccountController(UserManager<ApplicationUser> _userManager, SignInManager<ApplicationUser> _signInManager)
         {
-            _userManager = UserManager;
-            _signInManager = SignInManager;
         }
      
     }
